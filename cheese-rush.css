@@ -1,0 +1,703 @@
+@import url('https://fonts.googleapis.com/css2?family=Knewave&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fffac9
+}
+
+main {
+    display: grid;
+    grid-template-areas: "game info";
+    grid-gap: 5vw;
+    grid-template-columns: 65% 1fr;
+}
+
+aside {padding-right: 15px}
+
+body {
+   text-decoration: none;
+   color: black;
+   font-family: quicksand, sans-serif;
+   font-style: normal;
+   font-weight: 500
+}
+
+header a {
+   text-decoration: none;
+   color: black;
+   font-family: quicksand, sans-serif;
+   font-style: normal;
+   font-weight: 500;
+    padding-right: 30px
+}
+
+header ul {
+    width: 75vw;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: grid;
+    grid-template-areas: "game info";
+    grid-gap: 5vw;
+    grid-template-columns: 65% 1fr;
+}
+
+#screen {
+    position: relative;
+    margin-left: 25px;
+    grid-area: game;
+    width: 64vw;
+    height: 36vw;
+    border: 4px black solid;
+    overflow: hidden
+
+}
+
+#game {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#game_background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(assets/background.svg);
+    background-size: 100%;
+}
+
+#mia {
+    position: absolute;
+    width: 17vw;
+    height: 26.50vw;
+    background-image: url("assets/mia-neutral.svg");
+    background-size: 100%;
+}
+
+/*
+#mia-scared {
+    position: absolute;
+    width: 17vw;
+    height: 26.50vw;
+    background-image: url("assets/mia-scared.svg");
+    background-size: 100%;
+}
+*/
+
+.position1 {
+    position: absolute;
+    top: 6vw;
+    left: 4vw;
+}
+
+
+#button-pause {
+    position: absolute;
+    width: 2.5vw;
+    height: 2.5vw;
+    background-image: url("assets/button-pause.svg");
+    background-size: 100%;
+}
+
+#button-play {
+    position: absolute;
+    width: 2.5vw;
+    height: 2.5vw;
+    background-image: url("assets/button-play.svg");
+    background-size: 100%;
+}
+
+.position2 {
+    position: absolute;
+    top: 1vw;
+    left: 1vw;
+}
+
+
+#button-sound-on {
+    position: absolute;
+    width: 2.5vw;
+    height: 2.5vw;
+    background-image: url("assets/button-sound.svg");
+    background-size: 100%;
+}
+
+#button-sound-off {
+    position: absolute;
+    width: 2.5vw;
+    height: 2.5vw;
+    background-image: url("assets/button-nosound.svg");
+    background-size: 100%;
+}
+
+.position3 {
+    position: absolute;
+    top: 1vw;
+    left: 4.5vw;
+}
+
+
+#cat {
+    position: absolute;
+    width: 10vw;
+    height: 7.6vw;
+    background-image: url("assets/cat.svg");
+    background-size: 100%;
+
+}
+
+#container4 {
+    position: absolute
+}
+
+.position4 {
+    position: absolute;
+    top: 21vw;
+    left: 70vw;
+}
+
+
+#cheese1 {
+    position: absolute;
+    width: 5.69vw;
+    height: 4vw;
+    background-image: url("assets/cheese.svg");
+    background-size: 100%;
+
+}
+
+#container5 {
+    position: absolute
+}
+
+.spritePosition1 {
+    position: absolute;
+    top: -5vw;
+    left: 38vw;
+}
+
+
+#cheese2 {
+    position: absolute;
+    width: 5.69vw;
+    height: 4vw;
+    background-image: url("assets/cheese.svg");
+    background-size: 100%;
+
+}
+
+#container6 {
+    position: absolute
+}
+
+.spritePosition2 {
+    position: absolute;
+    top: -15vw;
+    left: 56vw;
+}
+
+
+#cheese3 {
+    position: absolute;
+    width: 5.69vw;
+    height: 4vw;
+    background-image: url("assets/cheese.svg");
+    background-size: 100%;
+
+}
+
+#container66 {
+    position: absolute
+}
+
+.spritePosition3 {
+    position: absolute;
+    top: -22vw;
+    left: 48vw;
+}
+
+
+#cheese4 {
+    position: absolute;
+    width: 5.69vw;
+    height: 4vw;
+    background-image: url("assets/cheese.svg");
+    background-size: 100%;
+
+}
+
+#container666 {
+    position: absolute
+}
+
+.spritePosition4 {
+    position: absolute;
+    top: -10vw;
+    left: 42vw;
+}
+
+
+#mousetrap1 {
+    position: absolute;
+    width: 3.3vw;
+    height: 5vw;
+    background-image: url("assets/mousetrap.svg");
+    background-size: 100%;
+
+}
+
+#container7 {
+    position: absolute
+}
+
+.spritePosition5 {
+    position: absolute;
+    top: -32vw;
+    left: 47vw;
+}
+
+
+#mousetrap2 {
+    position: absolute;
+    width: 3.3vw;
+    height: 5vw;
+    background-image: url("assets/mousetrap.svg");
+    background-size: 100%;
+
+}
+
+#container77 {
+    position: absolute
+}
+
+.spritePosition6 {
+    position: absolute;
+    top: -19vw;
+    left: 54vw;
+}
+
+
+#heart1 {
+    position: absolute;
+    width: 2.5vw;
+    height: 2.2vw;
+    background-image: url("assets/life.svg");
+    background-size: 100%;
+}
+
+.position8 {
+    position: absolute;
+    top: 1vw;
+    left: 27vw;
+}
+
+
+#heart2 {
+    position: absolute;
+    width: 2.5vw;
+    height: 2.2vw;
+    background-image: url("assets/life.svg");
+    background-size: 100%;
+}
+
+.position9 {
+    position: absolute;
+    top: 1vw;
+    left: 30.5vw;
+}
+
+
+#heart3 {
+    position: absolute;
+    width: 2.5vw;
+    height: 2.2vw;
+    background-image: url("assets/life.svg");
+    background-size: 100%;
+}
+
+.position10 {
+    position: absolute;
+    top: 1vw;
+    left: 34vw;
+}
+
+
+#score-cheese {
+    position: absolute;
+    width: 3.2vw;
+    height: 2.2vw;
+    background-image: url("assets/cheese.svg");
+    background-size: 100%;
+}
+
+.position11 {
+    position: absolute;
+    top: 1vw;
+    left: 15vw;
+}
+
+
+#points {
+    position: absolute;
+    font-size: 1.4vw;
+    font-family: 'Knewave', cursive;
+    width: 6vw
+}
+
+.position12 {
+    position: absolute;
+    top: 1.1vw;
+    left: 18.9vw;
+}
+
+
+#time {
+    position: absolute;
+    font-size: 1.4vw;
+    font-family: 'Knewave', cursive;
+    width: 7.5vw
+}
+
+
+
+.position13 {
+    position: absolute;
+    top: 1.1vw;
+    left: 6vw;
+}
+
+
+#instructions {
+    position: absolute;
+    top: 0vw;
+    left: 16.01vw;
+    width: 31.99vw;
+    height: 39vw;
+    background-image: url(assets/instructions.svg);
+    background-size: 100%;
+}
+
+#button-cancel {
+    position: absolute;
+    top: 1vw;
+    left: 44vw;
+    width: 2.5vw;
+    height: 2.5vw;
+    background-image: url("assets/button-cancel.svg");
+    background-size: 100%;
+}
+
+
+#level_complete {
+    position: absolute;
+    top: 0vw;
+    width: 100%;
+    height: 100%;
+    background-image: url(assets/win.svg);
+    background-size: 100%;
+}
+
+#button-restart1 {
+    position: absolute;
+    top: 28vw;
+    left: 25vw;
+    width: 5vw;
+    height: 5vw;
+    background-image: url("assets/button-restart.svg");
+    background-size: 100%;
+}
+
+#button-home1 {
+    position: absolute;
+    top: 28vw;
+    left: 34vw;
+    width: 5vw;
+    height: 5vw;
+    background-image: url("assets/button-home.svg");
+    background-size: 100%;
+}
+
+#button-restart2 {
+    position: absolute;
+    top: 28vw;
+    left: 25vw;
+    width: 5vw;
+    height: 5vw;
+    background-image: url("assets/button-restart.svg");
+    background-size: 100%;
+}
+
+#button-home2 {
+    position: absolute;
+    top: 28vw;
+    left: 34vw;
+    width: 5vw;
+    height: 5vw;
+    background-image: url("assets/button-home.svg");
+    background-size: 100%;
+}
+
+
+#game_over {
+    position: absolute;
+    top: 0vw;
+    width: 100%;
+    height: 100%;
+    background-image: url(assets/lose.svg);
+    background-size: 100%;
+}
+
+#title_screen {
+    position: absolute;
+    top: 0vw;
+    width: 100%;
+    height: 100%;
+    background-image: url(assets/title-screen.svg);
+    background-size: 100%;
+}
+
+#title_screen_button_play {
+    position: absolute;
+    top: 22vw;
+    left: 29vw;
+    width: 6vw;
+    height: 6vw;
+    background-image: url(assets/button-play.svg);
+    background-size: 100%;
+}
+
+#title_screen_button_instructions {
+    position: absolute;
+    top: 30vw;
+    left: 30.2vw;
+    width: 3.5vw;
+    height: 3.5vw;
+    background-image: url(assets/button-instructions.svg);
+    background-size: 100%;
+}
+
+footer {
+    height: 80px;
+    width: 100vw;
+    background-color: #f7d574;
+    position: absolute;
+    bottom: 0;
+}
+
+footer ul{
+    display: flex;
+    align-content: center;
+    width: 75vw;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+footer a {
+   text-decoration: none;
+   color: black;
+   font-family: quicksand, sans-serif;
+   font-style: normal;
+   font-weight: 500;
+    padding-right: 20px;
+    padding-left: 20px
+}
+
+@media only screen and (max-width: 700px) {
+    main {
+        grid-template-areas: "game"
+            "info";
+    }
+
+    main {display:flex; flex-direction:column;}
+
+    aside {
+        margin-left: 25px;
+    }
+}
+
+
+
+
+
+/*Animation classes*/
+
+.hidden {
+    visibility: hidden;
+}
+
+.mouse {
+    animation: mouse;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+.falling {
+    animation: falling;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+.horizontal {
+    animation: horizontal1;
+    animation-duration: 9s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.rolling {
+    animation: rolling;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.paused {
+    animation-play-state: paused;
+}
+
+
+.mirror-disappear {
+    animation: mirror-disappear;
+    animation-duration: 9s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.zoom_out {
+    animation: zoom_out;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards
+
+}
+
+
+
+
+/*Keyframes*/
+
+@keyframes mouse {
+
+0% {
+    background-image: url("assets/mia-neutral.svg");
+    }
+
+0.001% {
+    background-image: url("assets/mia-scared.svg");
+    }
+
+99% {
+    background-image: url("assets/mia-scared.svg");
+    }
+
+99.001% {
+    background-image: url("assets/mia-neutral.svg");
+    }
+}
+
+
+
+@keyframes zoom_out {
+
+to {
+    transform: scale(0)
+    }
+}
+
+
+@keyframes rolling {
+
+100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+@keyframes falling {
+
+    to {
+        transform: translateY(70vw);
+    }
+}
+
+
+@keyframes horizontal1 {
+
+
+    0% {
+        transform: translate(70vw, 21vw);
+    }
+
+    25% {
+        transform: translate(28vw, 21vw);
+    }
+
+    50% {
+        transform: translate(28vw, 5vw);
+    }
+
+    75% {
+        transform: translate(70vw, 5vw);
+    }
+
+    100% {
+        transform: translate(70vw, 21vw);
+    }
+
+}
+
+
+@keyframes mirror-disappear{
+
+
+    0% {
+        transform: scaleX(1);
+    }
+
+    25% {
+        transform: scaleX(1);
+        opacity: 100%
+    }
+
+    25.0001% {
+        transform: scaleX(-1);
+        opacity: 0%
+
+    }
+
+    50% {
+        transform: scaleX(-1);
+        opacity: 0%
+    }
+
+     51% {
+        transform: scaleX(-1);
+        opacity: 100%
+    }
+
+    75% {
+        transform: scaleX(-1);
+    }
+
+    100% {
+        transform: scaleX(1);
+    }
+
+}
+
+
